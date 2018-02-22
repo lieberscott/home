@@ -1,0 +1,198 @@
+$brown: brown;
+$purple: purple;
+$firstsectionbackground: #CCC;
+$h1: #999;
+$firstsectioncolor: white;
+
+body {
+  background: gray;
+}
+
+form {
+  display: inline-block;
+  float: left;
+  margin-left: 5%;
+  margin-bottom: 20px;
+  vertical-align: middle;
+  width: 40%;
+  min-width: 380px;
+}
+
+h1 {
+  color: $h1;
+}
+
+p {
+  margin: 0px 10px 20px 10px;
+}
+
+.bio {
+  display: inline-block;
+  float: left;
+  margin-left: 5%;
+  text-align: left;
+}
+
+.btn {
+  float: left;
+}
+
+.contact {
+  margin-bottom: 50px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.contact a {
+  margin: 0 20px;
+  color: $brown;
+  &:hover {
+    color: $purple;
+  }
+}
+
+.container {
+  // background: white;
+  font-family: 'Mukta Mahee', sans-serif;
+  padding: 0px;
+  max-width: 1064px;
+  min-width: 400px;
+}
+
+.content {
+  background: white;
+}
+
+.desc {
+  font-weight: bold;
+}
+
+.footer {
+  float: right;
+  padding: 5px;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 1px solid $brown;
+  border-radius: 0px;
+  font-size: 20px;
+  &:focus {
+    border-color: none;
+    border-bottom: 1px solid $brown;
+    outline: 0;
+    // -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}
+
+.form-text {
+  margin-left: 10px;
+  text-align: left;
+}
+
+.intro {
+  background: $firstsectionbackground;
+  margin-top: 57px;
+  padding-bottom: 50px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.intro a {
+  color: $brown;
+  &:hover {
+    color: $purple;
+    text-decoration: none;
+  }
+}
+
+.intro img {
+  border-radius: 50%;
+  display: relative;
+  margin-top: 30px;
+  max-height: 250px;
+  max-width: 250px;
+}
+
+.list-group-item {
+  background: $firstsectionbackground;
+  border: none;
+  text-align: right;
+}
+
+.media {
+  margin: auto;
+  min-width: 380px;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.opening {
+  text-align: center;
+}
+
+.portfolio {
+  padding-top: 20px;
+}
+
+.worksample {
+  border: 1px solid $firstsectionbackground;
+  border-radius: 5px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center center;
+  overflow: hidden;
+  width: 500px;
+}
+
+/*
+
+Toggle gifs
+
+*/
+
+#gameoflife img {
+  cursor: pointer;
+}
+#gameoflife .gamegif {
+  display: none;
+}
+
+#simon img {
+  cursor: pointer;
+}
+#simon .simongif {
+  display: none;
+}
+
+#pomodoro img {
+  cursor: pointer;
+}
+#pomodoro .pomogif {
+  display: none;
+}
+
+#leaderboard img {
+  cursor: pointer;
+}
+#leaderboard .leadergif {
+  display: none;
+}
+
+#nytimes img {
+  cursor: pointer;
+}
+#nytimes .nytgif {
+  display: none;
+}
+
+#calc img {
+  cursor: pointer;
+}
+#calc .calcgif {
+  display: none;
+}
