@@ -1,195 +1,190 @@
 body {
-  background: gray;
+  font-family: 'Nunito', sans-serif;
 }
 
-form {
-  display: inline-block;
-  float: left;
-  margin-left: 5%;
-  margin-bottom: 20px;
-  vertical-align: middle;
-  width: 40%;
-  min-width: 380px;
-}
-
-h1 {
-  color: #999;
-}
-
-p {
-  margin: 0px 10px 20px 10px;
-}
-
-.bio {
-  display: inline-block;
-  float: left;
-  margin-left: 5%;
-  text-align: left;
-}
-
-.btn {
-  float: left;
-}
-
-.contact {
-  margin-bottom: 50px;
-  padding-bottom: 40px;
+footer {
+  background-color: white;
+  min-width: 270px;
+  padding: 10px 0px;
   text-align: center;
 }
 
-.contact a {
-  margin: 0 20px;
-  color: brown;
-}
-.contact a:hover {
-  color: purple;
+.actualtext {
+  margin: 50px 0px 0px 100px;
 }
 
-.container {
-  font-family: 'Mukta Mahee', sans-serif;
-  padding: 0px;
-  max-width: 1064px;
-  min-width: 400px;
-}
-
-.content {
-  background: white;
-}
-
-.desc {
-  font-weight: bold;
-}
-
-.footer {
-  float: right;
-  padding: 5px;
-}
-
-.form-control {
-  border: none;
-  border-bottom: 1px solid brown;
-  border-radius: 0px;
-  font-size: 20px;
-}
-.form-control:focus {
-  border-color: none;
-  border-bottom: 1px solid brown;
-  outline: 0;
-  box-shadow: none;
-}
-
-.form-text {
-  margin-left: 10px;
-  text-align: left;
-}
-
-.intro {
-  background: #CCC;
-  margin-top: 57px;
-  padding-bottom: 50px;
-  padding-top: 30px;
+.biobottom {
+  margin: 40px auto 10px auto;
+  max-width: 600px;
+  min-width: 270px;
+  padding: 0px 30px;
   text-align: center;
 }
 
-.intro a {
-  color: brown;
-}
-.intro a:hover {
-  color: purple;
-  text-decoration: none;
+.center {
+  background: url(https://scottlieber.files.wordpress.com/2018/04/statehouseblue.jpg) no-repeat center center;
+  height: 570px;
 }
 
-.intro img {
-  border-radius: 50%;
-  display: relative;
-  margin-top: 30px;
-  max-height: 250px;
-  max-width: 250px;
+.info {
+  background-color: white;
+  position: absolute;
+  top: 169px;
+  left: 50%;
+  width: 456px;
+  height: 456px;
+  visibility: visible;
+  -webkit-animation: faderight 2s, slideright 2s;
 }
 
-.list-group-item {
-  background: #CCC;
-  border: none;
-  text-align: right;
+@-webkit-keyframes faderight {
+  0%{opacity:0;}
+  100%{opacity: 1;}
+}
+
+@-webkit-keyframes slideright {
+  0%{left:55%;}
+  100%{left: 50%;}
 }
 
 .media {
-  margin: auto;
-  min-width: 380px;
+  background-color: navy;
+  display: block;
+  margin: 0 auto;
+  padding: 25px 0px;
+  text-align: center;
+  max-width: 912px;
+}
+
+.mediawrapper {
+  text-align: center;
+}
+
+.media a {
+  color: white;
+  margin: 0px 40px;
+  text-decoration: none;
 }
 
 .name {
   font-size: 24px;
+}
+
+.navbar {
+  background-color: white;
+  min-width: 215px;
+}
+
+.nav-item {
+  font-size: 16px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.phone {
+  font-size: 12px;
+}
+
+.picdiv {
+  position: absolute;
+  top: 169px;
+  right: 50%;
+  height: 456px;
+  overflow: hidden;
+  visibility: visible;
+  -webkit-animation: fadeleft 2s, slideleft 2s;
+}
+
+@-webkit-keyframes fadeleft {
+  0%{opacity:0;}
+  100%{opacity: 1;}
+}
+
+@-webkit-keyframes slideleft {
+  0%{right:55%;}
+  100%{right: 50%;}
+}
+
+.picimg {
+  height: 100%;
+  width: auto;
+}
+
+.skills {
+  font-size: 15px;
   font-weight: bold;
 }
 
-.opening {
-  text-align: center;
+.subhead {
+  font-size: 18px;
 }
 
-.portfolio {
-  padding-top: 20px;
+#main {
+  min-width: 300px;
+  margin: 55px auto 30px auto;
 }
 
-.worksample {
-  border: 1px solid #CCC;
-  border-radius: 5px;
-  height: 300px;
-  object-fit: cover;
-  object-position: center center;
-  overflow: hidden;
-  width: 500px;
-}
 
-/*
+@media(max-width: 800px) {
 
-Toggle gifs
+  .actualtext {
+    margin: 0 auto;
+    text-align: center;
+  }
 
-*/
-#gameoflife img {
-  cursor: pointer;
-}
+  .center {
+    height: auto;
+    min-width: 300px;
+    padding-bottom: 20px;
+  }
 
-#gameoflife .gamegif {
-  display: none;
-}
+  .info {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    padding: 10px;
+    width: 90%;
+    max-width: 400px;
+    min-width: 270px;
+    height: auto;
+    -webkit-animation: none;
+  }
 
-#simon img {
-  cursor: pointer;
-}
+  .media {
+    width: 100%;
+    min-width: 300px;
+  }
 
-#simon .simongif {
-  display: none;
-}
+  .media a {
+    margin: 0 30px;
+  }
 
-#pomodoro img {
-  cursor: pointer;
-}
+  .nav-item {
+    margin: 0;
+  }
 
-#pomodoro .pomogif {
-  display: none;
-}
+  .picdiv {
+    position: relative;
+    top: 0px;
+    right: 0;
+    width: 90%;
+    max-width: 400px;
+    min-width: 270px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    visibility: visible;
+    -webkit-animation: none;
+  }
 
-#leaderboard img {
-  cursor: pointer;
-}
+  .picimg {
+    height: auto;
+    width: 100%;
+  }
 
-#leaderboard .leadergif {
-  display: none;
-}
+  #main {
+    min-width: 300px;
+  }
 
-#nytimes img {
-  cursor: pointer;
-}
-
-#nytimes .nytgif {
-  display: none;
-}
-
-#calc img {
-  cursor: pointer;
-}
-
-#calc .calcgif {
-  display: none;
 }
