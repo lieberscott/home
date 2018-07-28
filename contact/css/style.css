@@ -29,11 +29,15 @@ textarea {
   width: 100%;
 }
 
+.glitch {
+  width: 16px;
+}
+
 .info {
   position: absolute;
   top: 160px;
   left: 55%;
-  width: 280px;
+/*   width: 280px; */
   visibility: visible;
   width: 360px;
   -webkit-animation: faderight 2s, slideright 2s;
