@@ -5,59 +5,91 @@ body {
 footer {
   background-color: white;
   min-width: 270px;
-  padding: 10px 0px;
   text-align: center;
+  margin-top: 390px;
+  padding-top: 10px;
 }
 
-.actualtext {
-  margin: 50px 0px 0px 100px;
+form {
+  margin: 2px auto;
+  width: 98%;
 }
 
-.biobottom {
-  margin: 40px auto 10px auto;
-  max-width: 600px;
-  min-width: 270px;
-  padding: 0px 30px;
+h1 {
+  border-bottom: 1px solid white;
   text-align: center;
+  margin-bottom: 10px;
 }
 
-.center {
-  background: url(https://scottlieber.files.wordpress.com/2018/04/statehouseblue.jpg) no-repeat center center;
-  height: 570px;
+textarea {
+  resize: none;
 }
 
-.glitch {
-  width: 16px;
+.btn-dark {
+  width: 100%;
 }
 
 .info {
-  background-color: white;
   position: absolute;
-  top: 169px;
-  left: 50%;
-  width: 456px;
-  height: 456px;
+  top: 160px;
+  left: 55%;
+  width: 280px;
   visibility: visible;
+  width: 360px;
   -webkit-animation: faderight 2s, slideright 2s;
 }
 
 @-webkit-keyframes faderight {
-  0%{opacity:0;}
-  100%{opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slideright {
+  0% {
+    left: 60%;
+  }
+  100% {
+    left: 55%;
+  }
 }
 
-@-webkit-keyframes slideright {
-  0%{left:55%;}
-  100%{left: 50%;}
+.leftcontainer {
+  position: absolute;
+  top: 160px;
+  right: 55%;
+  overflow: hidden;
+  visibility: visible;
+  width: 360px;
+  -webkit-animation: fadeleft 2s, slideleft 2s;
+}
+
+@-webkit-keyframes fadeleft {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slideleft {
+  0% {
+    right: 60%;
+  }
+  100% {
+    right: 55%;
+  }
 }
 
 .media {
   background-color: navy;
+  border-radius: 3px;
   display: block;
   margin: 0 auto;
-  padding: 25px 0px;
+  padding: 5px 0px;
   text-align: center;
-  max-width: 912px;
 }
 
 .mediawrapper {
@@ -66,7 +98,7 @@ footer {
 
 .media a {
   color: white;
-  margin: 0px 40px;
+  margin: 0px 10px;
   text-decoration: none;
 }
 
@@ -89,34 +121,8 @@ footer {
   font-size: 12px;
 }
 
-.picdiv {
-  position: absolute;
-  top: 169px;
-  right: 50%;
-  height: 456px;
-  overflow: hidden;
-  visibility: visible;
-  -webkit-animation: fadeleft 2s, slideleft 2s;
-}
-
-@-webkit-keyframes fadeleft {
-  0%{opacity:0;}
-  100%{opacity: 1;}
-}
-
-@-webkit-keyframes slideleft {
-  0%{right:55%;}
-  100%{right: 50%;}
-}
-
-.picimg {
-  height: 100%;
-  width: auto;
-}
-
-.skills {
-  font-size: 15px;
-  font-weight: bold;
+.shorterone {
+  width: 90%;
 }
 
 .subhead {
@@ -125,14 +131,17 @@ footer {
 
 #main {
   min-width: 300px;
-  margin: 55px auto 30px auto;
+  margin: 55px auto 15px auto;
+  height: 100%;
 }
 
-
-@media(max-width: 800px) {
+@media (max-width: 800px) {
+  footer {
+    margin-top: 10px;
+  }
 
   .actualtext {
-    margin: 0 auto;
+    margin: 20px auto 0px auto;
     text-align: center;
   }
 
@@ -155,6 +164,20 @@ footer {
     -webkit-animation: none;
   }
 
+  .leftcontainer {
+    position: relative;
+    top: 0px;
+    right: 0;
+    width: 90%;
+    max-width: 400px;
+    min-width: 270px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    visibility: visible;
+    -webkit-animation: none;
+  }
+  
   .media {
     width: 100%;
     min-width: 300px;
@@ -168,20 +191,6 @@ footer {
     margin: 0;
   }
 
-  .picdiv {
-    position: relative;
-    top: 0px;
-    right: 0;
-    width: 90%;
-    max-width: 400px;
-    min-width: 270px;
-    height: auto;
-    margin: 0 auto;
-    overflow: hidden;
-    visibility: visible;
-    -webkit-animation: none;
-  }
-
   .picimg {
     height: auto;
     width: 100%;
@@ -190,5 +199,4 @@ footer {
   #main {
     min-width: 300px;
   }
-
 }
