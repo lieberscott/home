@@ -1,10 +1,14 @@
-body {
-  font-family: 'Lora', serif;
-}
-
 hr {
   border-color: #ABB2B9;
   width: 100%;
+}
+
+.bootstrap {
+  vertical-align: top;
+}
+
+.bottom {
+  font-size: 11px;
 }
 
 .desc { /* Top description: Full-stack developer */
@@ -57,11 +61,12 @@ hr {
 .nameanddesc { /* Wrapper around name and title at top of document */
   display: inline-block;
   vertical-align: top;
-  width: 74%;
+  width: 69%;
 }
 
 .navbar {
   background-color: white;
+  font-family: 'Nunito', sans-serif;
   min-width: 215px;
 }
 
@@ -109,6 +114,7 @@ hr {
   background: whitesmoke;
   border-top: 3px solid #383838;
   border-bottom: 3px solid #383838;
+  font-family: 'Lora', serif;
   margin: 80px auto 30px auto;
   padding: 50px;
   width: 965px;
